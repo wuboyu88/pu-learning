@@ -3,7 +3,7 @@
 """
 Created on Dec 21, 2012
 
-@author: Alexandre
+@author: Alexandres
 """
 from puLearning.puAdapter import PUAdapter
 from sklearn.svm import SVC
@@ -16,7 +16,7 @@ if __name__ == '__main__':
                                n_informative=2, 
                                n_redundant=2, 
                                n_repeated=0, 
-                               n_classes=2, 
+                               n_classes=2,
                                n_clusters_per_class=2, 
                                weights=None, 
                                flip_y=0.01, 
@@ -37,8 +37,8 @@ if __name__ == '__main__':
     
     pu_estimator.fit(X, y)
     
-    print pu_estimator
-    print
-    print "Comparison of estimator and PUAdapter(estimator):"
-    print "Number of disagreements: ", len(np.where((pu_estimator.predict(X) == estimator.predict(X)) == False)[0])
-    print "Number of agreements: ", len(np.where((pu_estimator.predict(X) == estimator.predict(X)) == True)[0])
+    print(pu_estimator)
+    print()
+    print("Comparison of estimator and PUAdapter(estimator):")
+    print("Number of disagreements: ", len(np.where((pu_estimator.predict(X) == estimator.predict(X)) == False)[0]))
+    print("Number of agreements: ", len(np.where((pu_estimator.predict(X) == estimator.predict(X)) == True)[0]))

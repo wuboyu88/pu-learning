@@ -53,7 +53,7 @@ class PUAdapter(object):
         y -- Labels associated to each example in X (Positive label: 1.0, Negative label: -1.0)
         """
         positives = np.where(y == 1.)[0]
-        hold_out_size = np.ceil(len(positives) * self.hold_out_ratio)
+        hold_out_size = int(np.ceil(len(positives) * self.hold_out_ratio))
 
         if len(positives) <= hold_out_size:
             raise('Not enough positive examples to estimate p(s=1|y=1,x). Need at least ' + str(hold_out_size + 1) + '.')
@@ -95,7 +95,7 @@ class PUAdapter(object):
         y -- Labels associated to each feature vector in X (Positive label: 1.0, Negative label: -1.0)
         """
         positives = np.where(y == 1.)[0]
-        hold_out_size = np.ceil(len(positives) * self.hold_out_ratio)
+        hold_out_size = int(np.ceil(len(positives) * self.hold_out_ratio))
 
         if len(positives) <= hold_out_size:
             raise('Not enough positive examples to estimate p(s=1|y=1,x). Need at least ' + str(hold_out_size + 1) + '.')
