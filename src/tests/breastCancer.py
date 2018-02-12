@@ -3,7 +3,7 @@ Created on Dec 22, 2012
 
 @author: Alexandre
 
-The goal of this test is to verifiy that the PUAdapter really allows a regular estimator to
+The goal of this test is to verify that the PUAdapter really allows a regular estimator to
 achieve better accuracy in the case where the \"negative\" examples are contaminated with a
 number of positive examples.
 

@@ -1,11 +1,9 @@
-#!/usr/bin/env python
-#-*- coding:utf-8 -*-
 """
 Created on Dec 21, 2012
 
 @author: Alexandres
 """
-from puLearning.puAdapter import PUAdapter
+from ..puLearning.puAdapter import PUAdapter
 from sklearn.svm import SVC
 from sklearn.datasets import make_classification
 import numpy as np
