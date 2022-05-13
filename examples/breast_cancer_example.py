@@ -42,7 +42,7 @@ if __name__ == '__main__':
     np.random.seed(42)
 
     print("Loading dataset")
-    X, y = load_breast_cancer('../datasets/breast-cancer-wisconsin.data')
+    X, y = load_breast_cancer('datasets/breast-cancer-wisconsin.data')
 
     # Shuffle dataset
     print("Shuffling dataset")
